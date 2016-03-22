@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tkdxplWebCDN", "tkdxplWebCDN\tkdxplWebCDN.csproj", "{6E332AE0-2D3A-4BFA-AA62-8C7CEE5A491A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{88A16C83-4556-4F1D-B149-878D7AA67701}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{D6A44E20-113D-42BF-9D46-07F28BB3CD83}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\tkdxplWebCDN-WAWS-dev.json = PublishScripts\Configurations\tkdxplWebCDN-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{73313961-A14C-4D3D-AD60-949F389CF688}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tkdxplWebCDNLoadTest", "tkdxplWebCDNLoadTest\tkdxplWebCDNLoadTest.csproj", "{0A49B311-62C1-4E17-8268-5B1498146F37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A60A2B1C-8DD9-4E20-A689-755D6ED7DFAE}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E332AE0-2D3A-4BFA-AA62-8C7CEE5A491A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E332AE0-2D3A-4BFA-AA62-8C7CEE5A491A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E332AE0-2D3A-4BFA-AA62-8C7CEE5A491A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E332AE0-2D3A-4BFA-AA62-8C7CEE5A491A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A49B311-62C1-4E17-8268-5B1498146F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A49B311-62C1-4E17-8268-5B1498146F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A49B311-62C1-4E17-8268-5B1498146F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A49B311-62C1-4E17-8268-5B1498146F37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6A44E20-113D-42BF-9D46-07F28BB3CD83} = {88A16C83-4556-4F1D-B149-878D7AA67701}
+	EndGlobalSection
+EndGlobal

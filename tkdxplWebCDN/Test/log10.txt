@@ -1,0 +1,102 @@
+
+C:\AzureFY15TK\16 CDN\tkdxplWebCDN\Test>ab -n 10 -c 10 http://tkdxplwebcdn.azurewebsites.net/ 
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking tkdxplwebcdn.azurewebsites.net (be patient).....done
+
+
+Server Software:        Microsoft-IIS/8.0
+Server Hostname:        tkdxplwebcdn.azurewebsites.net
+Server Port:            80
+
+Document Path:          /
+Document Length:        4540 bytes
+
+Concurrency Level:      10
+Time taken for tests:   4.692 seconds
+Complete requests:      10
+Failed requests:        0
+Write errors:           0
+Total transferred:      52480 bytes
+HTML transferred:       45400 bytes
+Requests per second:    2.13 [#/sec] (mean)
+Time per request:       4691.574 [ms] (mean)
+Time per request:       469.157 [ms] (mean, across all concurrent requests)
+Transfer rate:          10.92 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      419  426  10.5    423     455
+Processing:   427 1957 1227.4   2122    3844
+Waiting:      425 1957 1227.9   2122    3844
+Total:        848 2384 1229.0   2546    4264
+
+Percentage of the requests served within a certain time (ms)
+  50%   2546
+  66%   2968
+  75%   3423
+  80%   3843
+  90%   4264
+  95%   4264
+  98%   4264
+  99%   4264
+ 100%   4264 (longest request)
+
+C:\AzureFY15TK\16 CDN\tkdxplWebCDN\Test>ab -n 10 -c 10 http://az693827.vo.msecnd.net/ 
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking az693827.vo.msecnd.net (be patient).....done
+
+
+Server Software:        Microsoft-IIS/8.0
+Server Hostname:        az693827.vo.msecnd.net
+Server Port:            80
+
+Document Path:          /
+Document Length:        4540 bytes
+
+Concurrency Level:      10
+Time taken for tests:   2.573 seconds
+Complete requests:      10
+Failed requests:        0
+Write errors:           0
+Total transferred:      52480 bytes
+HTML transferred:       45400 bytes
+Requests per second:    3.89 [#/sec] (mean)
+Time per request:       2572.525 [ms] (mean)
+Time per request:       257.252 [ms] (mean, across all concurrent requests)
+Transfer rate:          19.92 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:       44   45   1.5     44      49
+Processing:   974 1182 438.7   1008    2391
+Waiting:      972 1180 438.8   1006    2390
+Total:       1018 1226 438.8   1051    2435
+
+Percentage of the requests served within a certain time (ms)
+  50%   1051
+  66%   1089
+  75%   1193
+  80%   1366
+  90%   2435
+  95%   2435
+  98%   2435
+  99%   2435
+ 100%   2435 (longest request)
+
+C:\AzureFY15TK\16 CDN\tkdxplWebCDN\Test>rem ab -n 10 -c 10 http://tkdxplwebcdn.azurewebsites.net/BlobImage/PublicEuropeWest 
+
+C:\AzureFY15TK\16 CDN\tkdxplWebCDN\Test>rem ab -n 10 -c 10 http://tkdxplwebcdn.azurewebsites.net/BlobImage/PublicJapanWest 
+
+C:\AzureFY15TK\16 CDN\tkdxplWebCDN\Test>rem ab -n 10 -c 10 http://tkdxplwebcdn.azurewebsites.net/BlobImage/PublicJapanWestCDN 
+
+C:\AzureFY15TK\16 CDN\tkdxplWebCDN\Test>ab -n 10 -c 10 https://az694211.vo.msecnd.net/public/IMG99.jpg 
+
+C:\AzureFY15TK\16 CDN\tkdxplWebCDN\Test>ab -n 10 -c 10 https://pltkdxstoragejapanwest.blob.core.windows.net/public/IMG99.jpg 
+
+C:\AzureFY15TK\16 CDN\tkdxplWebCDN\Test>ab -n 10 -c 10 https://tkdxvhdwest1.blob.core.windows.net/public/IMG99.jpg 

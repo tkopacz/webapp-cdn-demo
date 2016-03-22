@@ -1,0 +1,12 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewBag.Title = "PublicEuropeWest";
+}
+
+<h2>PublicEuropeWest</h2>
+@foreach (var item in Model) {
+    <p>
+        <img src="@item" alt="@item" />
+    </p>
+}
